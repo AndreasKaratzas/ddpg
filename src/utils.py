@@ -100,7 +100,6 @@ def combined_shape(length, shape=None):
 
 def _seed(env: gym.Env, device: torch.device, seed: int= 0):
     # set random seeds for reproduce
-    env.seed(seed)
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
