@@ -24,6 +24,7 @@ conda install numpy
 pip install pyyaml
 conda install pandas
 conda install matplotlib
+pip install psutil
 ```
 
 ### Usage
