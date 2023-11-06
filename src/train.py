@@ -87,7 +87,7 @@ def train(agent: Agent):
                 msg = metrics.compile(
                     epoch=epoch,
                     epochs=agent.epochs,
-                    epoch_time=round(epoch_time.compute(), 3),
+                    epoch_time=epoch_time.compute().numpy().round(3).item(),
                     cuda_mem=round(torch.cuda.memory_reserved() / 1E6, 3) if agent.device.type == 'cuda' else 0, 
                     show_cuda=agent.device.type == 'cuda',
                     ram_util=psutil.virtual_memory().percent,
