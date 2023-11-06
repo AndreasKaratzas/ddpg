@@ -5,11 +5,6 @@ import argparse
 def arguments():
     """Example run:
         >>> python main.py --env 'MountainCarContinuous-v0' --max-ep-len 1000 --hidden-sizes 256 256 256 --start-steps 1000 --device 'cuda' --debug-mode --name 'MountainCarContinuous-v0' --auto-save --info --logger-name 'MountainCarContinuous-v0' --checkpoint-dir 'data/experiments' --batch-size 256
-
-    Returns
-    -------
-    _type_
-        _description_
     """
     parser = argparse.ArgumentParser()
     # based on original implementation: https://github.com/openai/baselines/blob/ea25b9e8b234e6ee1bca43083f8f3cf974143998/baselines/her/experiment/config.py#L17
