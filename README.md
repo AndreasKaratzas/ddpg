@@ -14,6 +14,17 @@ DDPG with:
 
 ### Installation
 
+```bash
+conda create -n ddpg python=3.9 pip
+conda activate ddpg
+conda install swig
+pip install "gymnasium[all]"
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+conda install numpy
+pip install pyyaml
+conda install pandas
+conda install matplotlib
+```
 
 ### Usage
 
