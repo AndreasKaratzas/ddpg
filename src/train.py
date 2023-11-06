@@ -81,7 +81,7 @@ def train(agent: Agent):
             if epoch != agent.epoch and timestep >= agent.update_after:
                 agent.epoch = epoch
                 ep_end = time.time()
-                epoch_time.update(ep_end - ep_start)
+                epoch_time.update(torch.tensor(ep_end - ep_start))
 
                 # log agent progress
                 msg = metrics.compile(
