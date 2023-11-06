@@ -1,11 +1,11 @@
 
-import numpy as np
 import sys
 sys.path.append('../')
 
 import time
 import torch
 import psutil
+import numpy as np
 import torcheval.metrics as tnt
 
 from src.agent import Agent
