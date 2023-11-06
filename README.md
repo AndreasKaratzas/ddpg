@@ -25,7 +25,8 @@ pip install pyyaml
 conda install pandas
 conda install matplotlib
 pip install psutil
-pip install torchtnt
+pip install torcheval
+pip install chardet
 ```
 
 ### Usage
