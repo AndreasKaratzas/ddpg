@@ -80,7 +80,7 @@ def get_default_network(env_type: str) -> str:
 
 
 def get_env_details(env: gym.Env):
-    dummy_step = env.reset()
+    dummy_step, _ = env.reset()
     # self.env.observation_space.shape
     obs_dim = dummy_step['observation'].shape[0]
     act_dim = env.action_space.shape[0]

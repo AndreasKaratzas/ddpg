@@ -24,7 +24,7 @@ def train(agent: Agent):
     print("\n\n" + init_msg)
     agent.logger.log_message(init_msg)
 
-    state, episode_return, episode_length = agent.env.reset(seed=agent.seed), 0, 0
+    (state, info), episode_return, episode_length = agent.env.reset(seed=agent.seed), 0, 0
     # Main loop: collect experience in env and update/log each epoch
     for timestep in range(agent.total_steps):
         
@@ -63,7 +63,7 @@ def train(agent: Agent):
 
         # End of trajectory handling
         if done or (episode_length == agent.max_ep_len):
-            state, episode_return, episode_length = agent.env.reset(seed=agent.seed), 0, 0
+            (state, info), episode_return, episode_length = agent.env.reset(seed=agent.seed), 0, 0
             agent.noise_fn.reset()
 
         # Update handling
