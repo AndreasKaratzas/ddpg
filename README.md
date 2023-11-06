@@ -1,5 +1,5 @@
 
-# Odysseus: DDPG
+# DDPG
 
 ### Abstract
 
